@@ -31,11 +31,6 @@ echo export PATH=${M2_HOME}/bin:${PATH}>>maven.sh
 chmod 777 maven.sh
 ./maven.sh
 cd /home/
-mkdir git
-cd git
-yum install git -y
-
-sudo su -
 
 sudo wget -O /etc/yum.repos.d/jenkins.repo \https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
