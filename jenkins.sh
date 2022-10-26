@@ -14,6 +14,7 @@ ll
 touch java.sh
 echo export JAVA_HOME=/home/java/openlogic-openjdk-jre-8u342-b07-linux-x64 >>java.sh
 echo export PATH=${JAVA_HOME}/bin:${PATH} >>java.sh
+chmod 777 java.sh
 ./java.sh
 cd /home/
 mkdir maven
@@ -27,6 +28,7 @@ cd /etc/profile.d/
 touch maven.sh
 echo export M2_HOME=/home/maven/apache-maven-3.8.6 >>maven.sh
 echo export PATH=${M2_HOME}/bin:${PATH}>>maven.sh 
+chmod 777 maven.sh
 ./maven.sh
 cd /home/
 mkdir git
